@@ -10,12 +10,12 @@ html{
 }
 
 body{
-    margin:0;
+    margin: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
 h2, h4, p {
@@ -23,11 +23,12 @@ h2, h4, p {
 }
 
 .main{
-    width: 35%;
+    width: 600px;
     height: 400px;
     box-shadow: 2px 3px 7px 0 rgba(0,0,0,0.35);
     border-radius: 10px;
     overflow: hidden;
+
 }
 
 .top-section{
@@ -60,7 +61,7 @@ h2, h4, p {
 }
 
 .left-section{
-    width: 47%;
+    width: 50%;
     height: 100%;
     background-color: hsl(179, 62%, 43%);
     padding: 25px;
@@ -93,7 +94,7 @@ h2, h4, p {
 }
 
 .right-section{
-    width: 53%;
+    width: 50%;
     height: 100%;
     background-color: hsl(179, 50%, 65%);
     padding: 25px;
@@ -111,7 +112,7 @@ button{
     color: white;
     background-color: #c0df34;
     border: none;
-    width: 92%;
+    width: 100%;
     border-radius: 5px;
     padding: 15px;
     font-weight: 700;
@@ -136,4 +137,22 @@ footer{
     color: hsl(228, 45%, 44%);
 }
 
+@media (max-width: 650px){
+    .main{
+        width: 80%;
+        height: auto;
+    }
 
+    .top-section{
+        height: fit-content;
+    }
+    
+    .bottom-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-section, .right-section{
+        width: 100%;
+    }
+}
